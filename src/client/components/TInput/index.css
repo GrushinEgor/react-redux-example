@@ -1,0 +1,85 @@
+@import 'styles/variables.css';
+
+.root {
+  position: relative;
+  border: 1px solid var(--trood-gray-hover);
+  display: flex;
+  align-items: center;
+  min-height: 38px;
+  border-radius: 2px;
+  background-color: var(--trood-white);
+  padding: 10px 15px;
+}
+
+.error {
+  border-color: var(--trood-red);
+}
+
+.active {
+  border: 1px solid var(--trood-blue);
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.3);
+}
+
+.label {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  align-self: flex-start;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: var(--trood-gray-extra-dark);
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.phoneCode {
+  margin-right: 0.2rem;
+}
+
+.input {
+  font-size: inherit;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  resize: none;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  position: relative;
+  top: 1px;
+}
+
+.input::-webkit-input-placeholder {
+  color: var(--trood-gray-extra-dark);
+}
+
+.input::-moz-placeholder {
+  color: var(--trood-gray-extra-dark);
+}
+
+.input:-moz-placeholder {
+  color: var(--trood-gray-extra-dark);
+}
+
+.input:-ms-input-placeholder {
+  color: var(--trood-gray-extra-dark);
+}
+
+.textarea {
+  composes: input;
+}
+
+.shadow {
+  composes: input;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  position: absolute;
+}
+
+.errorText {
+  margin-top: 5px;
+  color: var(--trood-red);
+  font-size: 12px;
+}

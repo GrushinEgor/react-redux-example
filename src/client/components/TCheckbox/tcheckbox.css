@@ -1,0 +1,77 @@
+.root {
+  display: flex;
+  align-items: center;
+  margin: 50px;
+  position: relative;
+}
+
+.checkBox {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.checkBox:focus + .checkboxCustom {
+  border: 2px solid #0d77b2;
+}
+
+.checkboxCustom {
+  width: 17px;
+  height: 17px;
+  border: 1px solid #d0cccc;
+}
+
+.checkboxCustomError {
+  border: 1px solid red;
+}
+
+.label {
+  font-size: 14px;
+  color: #4a4a4a;
+  order: 2;
+}
+
+/* Error's styles */
+
+.errorBox {
+  padding: 5px 10px;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+}
+
+.errorBox:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: -6.5px;
+  left: calc(50% - 10px / 2);
+  background: #fff;
+  box-shadow: inset 1px 1px red;
+  transform: rotate(45deg);
+}
+
+.errorMsg {
+  font-size: 10px;
+}
+
+.errorBoxHidden {
+  display: none;
+}
+
+/* Type's styles */
+
+.left {
+  order: 3;
+  margin-left: 15px;
+}
+
+.right {
+  order: 1;
+  margin-right: 15px;
+}

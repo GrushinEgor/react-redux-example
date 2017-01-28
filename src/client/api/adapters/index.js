@@ -1,0 +1,1 @@
+export xhr from './xhr'

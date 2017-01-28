@@ -1,0 +1,139 @@
+@import 'styles/variables.css';
+
+.root {
+  position: relative;
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 68px;
+  height: 44px;
+  padding: 0 14px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 12px;
+  line-height: 1.33;
+  overflow: hidden;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.disabled {
+  opacity: 0.75;
+  cursor: default;
+}
+
+.button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: inherit;
+  z-index: 10;
+}
+
+.link {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  cursor: inherit;
+  z-index: 10;
+}
+
+input.button {
+  top: -40px;
+  height: calc(100% + 40px);
+}
+
+.label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: inherit;
+}
+
+.red {
+  color: var(--trood-red);
+  background-color: var(--trood-red);
+}
+
+.red:not(.disabled):hover {
+  color: var(--trood-red-hover);
+  background-color: var(--trood-red-hover);
+}
+
+.blue {
+  color: var(--trood-blue-dark);
+  background-color: var(--trood-blue-dark);
+}
+
+.blue:not(.disabled):hover {
+  color: var(--trood-blue-dark-hover);
+  background-color: var(--trood-blue-dark-hover);
+}
+
+.fill,
+.fill:not(.disabled):hover {
+  color: var(--trood-white);
+}
+
+.border {
+  border: 1px solid var(--trood-gray-hover);
+  background-color: var(--trood-white);
+}
+
+.border:not(.disabled):hover {
+  background-color: var(--trood-white-hover);
+}
+
+.white {
+  color: var(--trood-blue-dark);
+  background-color: var(--trood-white);
+}
+
+.white:not(.disabled):hover {
+  color: var(--trood-blue-dark-hover);
+  background-color: var(--trood-white-hover);
+}
+
+.gray {
+  color: var(--trood-white);
+  background-color: var(--trood-gray-super-dark);
+}
+
+.gray:not(.disabled):hover {
+  color: var(--trood-white);
+  background-color: var(--trood-gray-extra-dark);
+}
+
+.orange {
+  color: var(--trood-white);
+  background-color: var(--trood-orange);
+}
+
+.orange:not(.disabled):hover {
+  color: var(--trood-white);
+  background-color: var(--trood-orange-hover);
+}
+
+.text,
+.text:not(.disabled):hover {
+  background-color: transparent;
+}
+
+.text.gray {
+  color: var(--trood-gray-extra-dark);
+}
+
+.text.gray:not(.disabled):hover {
+  color: var(--trood-gray-dark);
+}
