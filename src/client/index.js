@@ -16,8 +16,8 @@ import { stateKey, readStorage } from 'storage'
 import addStorageWriter from 'storeSerializer'
 import { STATE_REPLACE_ACTION } from 'constants'
 
-
-if (!process.env.TEST) {
+   
+if (!process.env.TEST) { 
   const history = syncHistoryWithStore(
     browserHistory,
     store,

@@ -6,7 +6,6 @@ import * as selectors from './selectors'
 
 export {
   ModalWrapper,
-  ConfirmModal,
 } from './components'
 
 export default { actions, constants, reducer, selectors }

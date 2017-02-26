@@ -57,11 +57,11 @@
     "webpack-dev-server": "^1.14.1"
   },
   "scripts": {
-    "precommit": "npm run lint",
     "lint": "npm run jslint && npm run stylelint",
     "jslint": "eslint src/client --ext .js",
     "stylelint": "stylelint \"src/client/**/*.css\"",
     "build": "cross-env BABEL_DISABLE_CACHE=1 NODE_ENV=production webpack",
-    "start": "cross-env BABEL_DISABLE_CACHE=1 NODE_ENV=development API_HOST=http://127.0.0.1:8000 node server.js"
+    "start": "cross-env BABEL_DISABLE_CACHE=1 NODE_ENV=development API_HOST=http://127.0.0.1:3000 node server.js",
+    "dev": "webpack-dev-server --inline --hot --port 3000"
   }
 }

@@ -6,7 +6,6 @@ import Header from '../Header'
 
 const App = ({
   pathname,
-
   children,
 }) => {
   return (
